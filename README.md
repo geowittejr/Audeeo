@@ -1,2 +1,2 @@
 # Audeeo
-MP3 Player for personal use.
+MP3 Player for personal use!
