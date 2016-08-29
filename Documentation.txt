@@ -1,0 +1,79 @@
+
+
+
+Use VS 2015 for Github and TFS
+https://www.visualstudio.com/docs/git/gitquickstart
+
+
+
+Web Services For Music Information
+
+List of 25 Music Api's
+http://www.programmableweb.com/news/25-music-apis/2008/02/21
+
+GRACENOTE
+Has recognition technology in addition to text-based search api's.
+https://developer.gracenote.com/plans
+
+LastFM
+http://www.last.fm/api
+
+MusicBrainz
+http://musicbrainz.org/doc/Development/JSON_Web_Service
+
+freeDB
+Not actually a web service yet. 
+http://www.freedb.org/
+
+
+Amazon Web Services
+
+AWS Serverless Platform
+I can build this app completely with AWS services completely free.
+Most of the services I need are "pay as you go" and have very generous free tier limits that
+do not expire after 12 months.  Here is a list of the services I would use:
+--AWS Lambda - serverless functions: https://aws.amazon.com/lambda
+--Amazon API Gateway - create and expose api's: https://aws.amazon.com/api-gateway
+--AWS IAM - Identity Mgmt: https://aws.amazon.com/iam/details/
+--AWS Cognito - User sign in, data synch: https://aws.amazon.com/cognito/
+--DynamoDB - NoSQL database: https://aws.amazon.com/dynamodb
+
+Here is an article from Auth0 that describes building a serverless app using the above and then also
+how to use their product for authentication: https://auth0.com/blog/building-serverless-apps-with-aws-lambda/
+
+Node.js and DynamoDB
+http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.NodeJs.html
+
+
+Build Process
+
+Task Runners
+In the JS side of things, I can use task runners to configure and run Brunch, Webpack, Gulp, NPM task.
+https://blogs.msdn.microsoft.com/webdev/2016/01/06/task-runners-in-visual-studio-2015/
+
+
+Brunch
+A alternative to Webpack, claims to be simpler and faster
+http://brunch.io/
+
+NPM vs. Bower
+--NPM has nested dependencies.
+This makes it more stable for packages that require different versions of the same dependencies.
+--Bower has a flat dependency tree which means it only has one version of each package.
+This makes the front end packages load faster.
+--NPM can be used with Browserify or NPM dedupe to help with the nesting issue.
+--NPM 3 handles dependencies in a more flat way now.
+https://docs.npmjs.com/how-npm-works/npm3-dupe
+It's not perfect, so I probably should use Browserify with it.
+
+Browserify
+Use with NPM to package dependencies for the browser so that they can be required.
+http://browserify.org/
+
+
+ES6 Babel and Babelify
+Instead of using CommonJS exports that Node.js and Browserify uses, I could code in the ES6
+modules format and use Babel to transpile it to CommonJS format.  For the browser, I would
+use Babelify instead of Browserify to keep using the ES6 format.
+https://github.com/babel/babelify
+https://babeljs.io/
