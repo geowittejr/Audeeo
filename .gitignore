@@ -6,3 +6,4 @@
 /.vs
 /Audeeo.UI.Prototype/bin
 /Audeeo.UI.Prototype/obj/Debug
+/Audeeo.LambdaTest/node_modules/aws-sdk
