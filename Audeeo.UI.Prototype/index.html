@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>Audeeo</h2>
+    <video id="video1" controls="controls" autoplay="autoplay" name="media"><source id="source1" src="" type="audio/mpeg"></video>
+
+    <!--<script src="scripts/common/filterSelector.js"></script>-->
+
+
+    <script type="text/javascript">
+
+        (function () {
+            //scripts should be loaded now...
+
+            //Add paths to music files here
+            var musicFiles = [
+                "Droptek+%26+Tut+Tut+Child+-+Drop+That+Child.mp3",
+                "Tristam+%26+Braken+-+Flight.mp3",
+                "Pegboard+Nerds+-+Pressure+Cooker.mp3",
+                "Pegboard+Nerds+-+Gunpoint+(VIP+mix)+%5BMonstercat+Release%5D.mp3"
+            ];
+
+            var playIndex = 0;
+
+            //Add event listeners
+            var video1 = document.getElementById('video1');
+            var source1 = document.getElementById('source1');
+
+            source1.src = musicFiles[playIndex];
+            video1.load();
+
+            video1.addEventListener('playing', function (e) {
+                console.log('Audio playback has started ...');
+                console.log('Playback started at : ' + e.target.currentTime + " seconds");
+            }, false);
+
+            video1.addEventListener('pause', function (e) {
+                console.log('Audio playback has been paused ...');
+                console.log('Playback paused at : ' + e.target.currentTime + " seconds");
+            }, false);
+
+            video1.addEventListener('ended', function (e) {
+                console.log('Playback has ended');
+                playIndex = playIndex === musicFiles.length - 1 ? 0 : playIndex + 1;
+                source1.src = musicFiles[playIndex];
+                video1.load();
+                video1.play();
+            }, false);
+
+            video1.addEventListener('volumechange', function (e) {
+                console.log("Volume has changed ...");
+                console.log("Volume is now " + e.target.volume);
+            }, false);
+        })();
+    </script>
+</body>
+</html>
