@@ -48,7 +48,15 @@ Node.js and DynamoDB
 http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.NodeJs.html
 
 
-AWS Lambda with Visual Studio
+AWS Lambda 
+
+AWS Labs Examples
+http://www.allthingsdistributed.com/2016/06/aws-lambda-serverless-reference-architectures.html
+
+Good case study for server-less app architecture
+http://highscalability.com/blog/2015/12/7/the-serverless-start-up-down-with-servers.html
+
+...with Visual Studio
 https://blogs.aws.amazon.com/net/post/Tx381XNNQALP8BA/AWS-Lambda-Support-in-Visual-Studio
 
 
