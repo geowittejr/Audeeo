@@ -4,6 +4,8 @@
 Use VS 2015 for Github and TFS
 https://www.visualstudio.com/docs/git/gitquickstart
 
+Store music files in AWS S3 and metadata for the files in AWS SimpleDB
+https://aws.amazon.com/simpledb/
 
 
 Web Services For Music Information
@@ -37,6 +39,7 @@ do not expire after 12 months.  Here is a list of the services I would use:
 --AWS IAM - Identity Mgmt: https://aws.amazon.com/iam/details/
 --AWS Cognito - User sign in, data synch: https://aws.amazon.com/cognito/
 --DynamoDB - NoSQL database: https://aws.amazon.com/dynamodb
+--SimpleDB - NoSQL database, often used in conjuction with S3: https://aws.amazon.com/simpledb/
 
 Here is an article from Auth0 that describes building a serverless app using the above and then also
 how to use their product for authentication: https://auth0.com/blog/building-serverless-apps-with-aws-lambda/
