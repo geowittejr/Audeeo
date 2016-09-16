@@ -68,8 +68,9 @@ https://blogs.msdn.microsoft.com/webdev/2016/01/06/task-runners-in-visual-studio
 
 
 Brunch
-A alternative to Webpack, claims to be simpler and faster
+A alternative to Webpack, claims to be simpler and faster.
 http://brunch.io/
+Here's a task runner for VS: https://visualstudiogallery.msdn.microsoft.com/de706ad0-8a73-4df3-bef5-867bb9a70d51
 
 NPM vs. Bower
 --NPM has nested dependencies.
