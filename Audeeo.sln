@@ -17,8 +17,6 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsConsoleApp1", "Nodejs
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "NodejsWebApp1", "NodejsWebApp1\NodejsWebApp1.njsproj", "{E366BA51-0D93-4E89-9664-95FFE06B89E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsDynamoDBS3LinkSample1", "AwsDynamoDBS3LinkSample1\AwsDynamoDBS3LinkSample1.csproj", "{FFEA2697-0625-48DA-BA91-77E347F7BAE9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsSimpleDBAsyncSample1", "AwsSimpleDBAsyncSample1\AwsSimpleDBAsyncSample1.csproj", "{8D8BF3DA-8E8F-47AB-931C-4DA814A61A3B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AwsDynamoDBDocumentSample1", "AwsDynamoDBDocumentSample1\AwsDynamoDBDocumentSample1.csproj", "{968B2B99-BECB-4BAB-ACBB-671A3688CD42}"
@@ -45,10 +43,6 @@ Global
 		{E366BA51-0D93-4E89-9664-95FFE06B89E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E366BA51-0D93-4E89-9664-95FFE06B89E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E366BA51-0D93-4E89-9664-95FFE06B89E2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FFEA2697-0625-48DA-BA91-77E347F7BAE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FFEA2697-0625-48DA-BA91-77E347F7BAE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FFEA2697-0625-48DA-BA91-77E347F7BAE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FFEA2697-0625-48DA-BA91-77E347F7BAE9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8D8BF3DA-8E8F-47AB-931C-4DA814A61A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8D8BF3DA-8E8F-47AB-931C-4DA814A61A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D8BF3DA-8E8F-47AB-931C-4DA814A61A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
