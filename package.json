@@ -1,0 +1,11 @@
+{
+  "name": "audeeo",
+  "version": "1.0.0",
+  "description": "MP3 Player for personal use. More to come...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
