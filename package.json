@@ -11,5 +11,9 @@
   "devDependencies": {
     "typescript": "^1.8.10",
     "typings": "^1.4.0"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
   }
 }
