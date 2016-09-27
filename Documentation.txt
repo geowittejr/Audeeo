@@ -94,6 +94,9 @@ use Babelify instead of Browserify to keep using the ES6 format.
 https://github.com/babel/babelify
 https://babeljs.io/
 
-
+###React
 Creating React Apps with no configuration
 https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html
+
+React and TypeScript
+http://blog.tomduncalf.com/posts/setting-up-typescript-and-react/
