@@ -1,14 +1,14 @@
-Documentation
+#Documentation
 
 
-Use VS 2015 for Github and TFS
+###Use VS 2015 for Github and TFS
 https://www.visualstudio.com/docs/git/gitquickstart
 
-Store music files in AWS S3 and metadata for the files in AWS SimpleDB
+###Store music files in AWS S3 and metadata for the files in AWS SimpleDB
 https://aws.amazon.com/simpledb/
 
 
-Web Services For Music Information
+###Web Services For Music Information
 
 List of 25 Music Api's
 http://www.programmableweb.com/news/25-music-apis/2008/02/21
@@ -28,7 +28,7 @@ Not actually a web service yet.
 http://www.freedb.org/
 
 
-Amazon Web Services
+###Amazon Web Services
 
 AWS Serverless Platform
 I can build this app completely with AWS services completely free.
@@ -48,7 +48,7 @@ Node.js and DynamoDB
 http://docs.aws.amazon.com/amazondynamodb/latest/gettingstartedguide/GettingStarted.NodeJs.html
 
 
-AWS Lambda 
+###AWS Lambda 
 
 AWS Labs Examples
 http://www.allthingsdistributed.com/2016/06/aws-lambda-serverless-reference-architectures.html
@@ -60,19 +60,19 @@ http://highscalability.com/blog/2015/12/7/the-serverless-start-up-down-with-serv
 https://blogs.aws.amazon.com/net/post/Tx381XNNQALP8BA/AWS-Lambda-Support-in-Visual-Studio
 
 
-Build Process
+###Build Process
 
 Task Runners
 In the JS side of things, I can use task runners to configure and run Brunch, Webpack, Gulp, NPM task.
 https://blogs.msdn.microsoft.com/webdev/2016/01/06/task-runners-in-visual-studio-2015/
 
 
-Brunch
+###Brunch
 A alternative to Webpack, claims to be simpler and faster.
 http://brunch.io/
 Here's a task runner for VS: https://visualstudiogallery.msdn.microsoft.com/de706ad0-8a73-4df3-bef5-867bb9a70d51
 
-NPM vs. Bower
+###NPM vs. Bower
 --NPM has nested dependencies.
 This makes it more stable for packages that require different versions of the same dependencies.
 --Bower has a flat dependency tree which means it only has one version of each package.
@@ -82,12 +82,14 @@ This makes the front end packages load faster.
 https://docs.npmjs.com/how-npm-works/npm3-dupe
 It's not perfect, so I probably should use Browserify with it.
 
-Browserify
+###Browserify
+
 Use with NPM to package dependencies for the browser so that they can be required.
 http://browserify.org/
 
 
-ES6 Babel and Babelify
+###ES6 Babel and Babelify
+
 Instead of using CommonJS exports that Node.js and Browserify uses, I could code in the ES6
 modules format and use Babel to transpile it to CommonJS format.  For the browser, I would
 use Babelify instead of Browserify to keep using the ES6 format.
@@ -98,6 +100,10 @@ https://babeljs.io/
 Creating React Apps with no configuration
 https://facebook.github.io/react/blog/2016/07/22/create-apps-with-no-configuration.html
 
-React and TypeScript
-http://blog.tomduncalf.com/posts/setting-up-typescript-and-react/
+###React and TypeScript
+
+This is a good project template:
 https://github.com/rangle/typescript-react-redux-starter
+
+This blog post explains the setup involved with React, TypeScript, and Webpack:
+http://blog.tomduncalf.com/posts/setting-up-typescript-and-react/#recommendation
