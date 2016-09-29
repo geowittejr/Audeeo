@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^1.8.10",
-    "typings": "^1.4.0"
+    "@types/aws-sdk": "0.0.37",
+    "@types/react": "^0.14.37",
+    "@types/react-dom": "^0.14.17",
+    "typescript": "^2.0.3"
   },
   "dependencies": {
     "aws-sdk": "^2.6.4",
