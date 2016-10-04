@@ -1,5 +1,6 @@
 // Karma configuration
 // Generated on Sun Oct 02 2016 18:28:13 GMT-0400 (Eastern Daylight Time)
+//https://scotch.io/tutorials/testing-angularjs-with-jasmine-and-karma-part-1
 
 module.exports = function(config) {
   config.set({
