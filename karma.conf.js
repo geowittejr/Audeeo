@@ -75,6 +75,7 @@ module.exports = function(config) {
   //If we're on Travis CI, use the custom Chrome browser launcher
   if(process.env.TRAVIS){
     configuration.browsers = ['Chrome_Travis_CI'];
+    configuration.singleRun = true;
   }
 
   config.set(configuration)
