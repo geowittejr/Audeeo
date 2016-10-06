@@ -4,12 +4,7 @@
 
 module.exports = function(config) {
 
-  //If we're on Travis CI, use the custom Chrome browser launcher
-  if(process.env.TRAVIS){
-    config.browsers = ['Chrome_Travis_CI'];
-  }
-
-  config.set({
+  var configuration = {
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
@@ -67,8 +62,8 @@ module.exports = function(config) {
 
     // plugins that will be required by Karma
     plugins: [
-        'karma-jasmine',
-        'karma-chrome-launcher'
+      'karma-jasmine',
+      'karma-chrome-launcher'
     ],
 
     // Continuous Integration mode
@@ -78,5 +73,12 @@ module.exports = function(config) {
     // Concurrency level
     // how many browser should be started simultaneous
     concurrency: Infinity
-  })
+  }
+
+  //If we're on Travis CI, use the custom Chrome browser launcher
+  if(process.env.TRAVIS){
+    configuration.browsers = ['Chrome_Travis_CI'];
+  }
+
+  config.set(configuration)
 }
