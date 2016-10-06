@@ -14,7 +14,8 @@ module.exports = function(config) {
     files: [
       {pattern: 'dist/src/**', included: false, watched: false, served: true},
       {pattern: 'node_modules/**', included: false, watched: false, served: true},
-      'dist/test/**/*spec.js'
+      'dist/test/**/*spec.js',
+      'dist/test/client/app/app.spec.js'
     ],
 
     // list of files to exclude
