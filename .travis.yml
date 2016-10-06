@@ -1,3 +1,12 @@
 language: node_js
+
 node_js:
   - "4.4.0"
+
+# In order to run tests in Chrome on Travis:
+# https://swizec.com/blog/how-to-run-javascript-tests-in-chrome-on-travis/swizec/6647
+
+before_install:
+  - export CHROME_BIN=chromium-browser      # set CHROME_BIN
+  - export DISPLAY=:99.0                    # fake a display
+  - sh -e /etc/init.d/xvfb start            # gui environment faker thingy

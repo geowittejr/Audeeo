@@ -3,6 +3,12 @@
 //https://scotch.io/tutorials/testing-angularjs-with-jasmine-and-karma-part-1
 
 module.exports = function(config) {
+
+  //If we're on Travis CI, use the custom Chrome browser launcher
+  if(process.env.TRAVIS){
+    config.browsers = ['Chrome_Travis_CI'];
+  }
+
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -49,6 +55,15 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: ['Chrome'],
+
+    // set a custom launcher for Chrome on Travis
+    // https://swizec.com/blog/how-to-run-javascript-tests-in-chrome-on-travis/swizec/6647
+    customLaunchers: {
+      Chrome_Travis_CI: {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
+      }
+    },
 
     // plugins that will be required by Karma
     plugins: [
