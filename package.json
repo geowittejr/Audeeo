@@ -4,7 +4,7 @@
   "description": "MP3 Player for personal use. More to come...",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start karma.conf.js"
   },
   "author": "",
   "license": "ISC",
