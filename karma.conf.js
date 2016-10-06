@@ -16,8 +16,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      {pattern: 'dist/src/**', included: false, watched: false, served: true},
+      {pattern: 'node_modules/**', included: false, watched: false, served: true},
+      'dist/test/**/*_spec.js'
     ],
-
 
     // list of files to exclude
     exclude: [
