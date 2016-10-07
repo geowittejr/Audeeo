@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/aws-sdk": "0.0.37",
+    "@types/jasmine": "^2.5.35",
     "@types/react": "^0.14.37",
     "@types/react-dom": "^0.14.17",
     "@types/webpack": "^1.12.34",
