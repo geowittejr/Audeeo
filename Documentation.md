@@ -107,3 +107,8 @@ https://github.com/rangle/typescript-react-redux-starter
 
 This blog post explains the setup involved with React, TypeScript, and Webpack:
 http://blog.tomduncalf.com/posts/setting-up-typescript-and-react/#recommendation
+
+###Automatically Deploy
+
+
+http://cloudcannon.com/tutorial/2016/01/21/deploy-jekyll-sites-to-s3-using-travis-ci/
